@@ -4,4 +4,45 @@
 
 body {
 	background-color: #fcfcfc;
+	font-family: "Roboto";
+}
+
+/********************
+*******NAVBAR********
+*********************/
+
+#header {
+	background-color: white;
+	/*padding-top: 15px;
+	padding-bottom: 15px;*/
+}
+
+.navbar-brand {
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.navbar-brand>img {
+	height: 100%;
+	padding: 0px 15px 0px 25px;
+	width: auto;
+}
+
+#myNavBar {
+	margin-right: -15px;
+}
+
+.nav li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+}
+
+li:hover {
+	background-color: #f5f5f5;
+	cursor: pointer;
 }
