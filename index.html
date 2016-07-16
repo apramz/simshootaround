@@ -29,7 +29,95 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container"></div>
+		<div class="container description">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="title">WELCOME TO SHOOTOUT SIMULATOR</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Choose your favorite player and challenge an NBA great. No layups. <br>Who's going to score 21 first?</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row buttons">
+				<div class="col-md-6">
+					<button id="userDropBtn">CHOOSE PLAYER<span class="caret"></span></button>
+				</div>
+				<div class="col-md-6">
+					<button id="cpuDropBtn">CHOOSE CPU<span class="caret"></span></button>
+				</div>
+			</div>
+			<div class="row stat_displays">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 table-responsive">
+					<table id="userHomeDisplay" class="playerHomeDisplay">
+						<tr>
+							<td class="imageHomeDisplay"><img src="images/home/userHeaderIcon.png" /></td>
+							<td>Player</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Image</td>
+							<td>Season</td>
+						</tr>
+						<tr>
+							<td>Position and #</td>
+						</tr>
+						<tr>
+							<td>Image</td>
+							<td>Shooting Percentages</td>
+						</tr>
+						<tr>
+							<td>Midrange Jumper</td>
+							<td>X%</td>
+						</tr>
+						<tr>
+							<td>Three Pointer</td>
+							<td>X%</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-6 table-responsive">
+					<table id="cpuHomeDisplay" class="playerHomeDisplay">
+						<tr>
+							<td class="imageHomeDisplay"><img src="images/home/cpuHeaderIcon.png" /></td>
+							<td>CPU</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Image</td>
+							<td>Season</td>
+						</tr>
+						<tr>
+							<td>Position and #</td>
+						</tr>
+						<tr>
+							<td class="imageHomeDisplay"><img src="images/home/statHeaderIcon.png"</td>
+							<td>Shooting Percentages</td>
+						</tr>
+						<tr>
+							<td>Midrange Jumper</td>
+							<td>X%</td>
+						</tr>
+						<tr>
+							<td>Three Pointer</td>
+							<td>X%</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="styles/bootstrap/js/bootstrap.min.js"></script>

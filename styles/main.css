@@ -1,15 +1,20 @@
-/********************
-********BODY*********
-*********************/
+/********************************
+*********************************
+			BODY
+*********************************
+*********************************/
 
 body {
 	background-color: #fcfcfc;
 	font-family: "Roboto";
+	color: #555;
 }
 
-/********************
-*******NAVBAR********
-*********************/
+/********************************
+*********************************
+			NAVBAR
+*********************************
+*********************************/
 
 #header {
 	background-color: white;
@@ -45,4 +50,81 @@ body {
 li:hover {
 	background-color: #f5f5f5;
 	cursor: pointer;
+}
+
+/********************************
+*********************************
+		HOME PAGE CONTENT
+*********************************
+*********************************/
+
+.description {
+	text-align: center;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 35px;
+}
+
+hr {
+	border-width: 2px;
+	border-color: #e7e7e7;
+	width: 70%;
+}
+
+/********************************
+			buttons
+*********************************/
+
+.buttons {
+	text-align: center;
+}
+
+.caret {
+	border-left: 7px solid transparent;
+	border-right: 7px solid	transparent;
+	border-top: 7px solid;
+	margin-left: 10px;
+}
+
+#userDropBtn, #cpuDropBtn {
+	color: white;
+	padding: 16px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+}
+
+#userDropBtn {
+	background-color: #457cbe;
+	width: 250px;
+}
+
+#cpuDropBtn {
+	background-color: #F30000;
+	width: 250px;
+}
+
+/********************************
+	home user/cpu display
+*********************************/
+
+.playerHomeDisplay,table {
+	width: 100%;
+}
+
+.playerHomeDisplay table, .playerHomeDisplay tr, .playerHomeDisplay td {
+	border: 1px solid #555;
+	border-collapse: collapse;
+}
+
+.imageHomeDisplay {
+	width: 10%;
+}
+
+.imageHomeDisplay img {
+	width: 100%;
 }
