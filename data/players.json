@@ -1,0 +1,82 @@
+{
+	"Carmelo Anthony": {
+		"name": "Carmelo Anthony",
+		"season": "2015-2016",
+		"context": "GSW - Point Guard #7",
+		"image": "images/players/canthony.png",
+		"shot_a_pct": 0.42,
+		"shot_b_pct": 0.34
+	},
+	"Chris Paul": {
+		"name": "Chris Paul",
+		"season": "2015-2016",
+		"context": "LAC - Point Guard #3",
+		"image": "images/players/cpaul.png",
+		"shot_a_pct": 0.53,
+		"shot_b_pct": 0.37
+	},
+	"Dirk Nowitzki": {
+		"name": "Dirk Nowitzki",
+		"season": "2015-2016",
+		"context": "DAL - Power Forward #41",
+		"image": "images/players/dnowitzki.png",
+		"shot_a_pct": 0.48,
+		"shot_b_pct": 0.37
+	},
+	"Dwyane Wade": {
+		"name": "Dwyane Wade",
+		"season": "2015-2016",
+		"context": "DAL - Shooting Guard #3",
+		"image": "images/players/dwade.png",
+		"shot_a_pct": 0.34,
+		"shot_b_pct": 0.16
+	},
+	"James Harden": {
+		"name": "James Harden",
+		"season": "2015-2016",
+		"context": "HOU - Point Guard #13",
+		"image": "images/players/jharden.png",
+		"shot_a_pct": 0.43,
+		"shot_b_pct": 0.36
+	},
+	"John Wall": {
+		"name": "John Wall",
+		"season": "2015-2016",
+		"context": "WAS - Point Guard #2",
+		"image": "images/players/jwall.png",
+		"shot_a_pct": 0.37,
+		"shot_b_pct": 0.35
+	},
+	"Kobe Bryant": {
+		"name": "Kobe Bryant",
+		"season": "2005-2006",
+		"context": "LAL - Shooting Guard #24",
+		"image": "images/players/kbryant.png",
+		"shot_a_pct": 0.48,
+		"shot_b_pct": 0.35
+	},
+	"Kevin Durant": {
+		"name": "Kevin Durant",
+		"season": "2015-2016",
+		"context": "OKC - Small Forward #35",
+		"image": "images/players/kdurant.png",
+		"shot_a_pct": 0.54,
+		"shot_b_pct": 0.39
+	},
+	"Kyrie Irving": {
+		"name": "Kyrie Irving",
+		"season": "2015-2016",
+		"context": "CLE - Point Guard #2",
+		"image": "images/players/kirving.png",
+		"shot_a_pct": 0.50,
+		"shot_b_pct": 0.32
+	},
+	"Kawhi Leonard": {
+		"name": "Kawhi Leonard",
+		"season": "2015-2016",
+		"context": "SAS - Small Forward #2",
+		"image": "images/players/kleonard.png",
+		"shot_a_pct": 0.50,
+		"shot_b_pct": 0.44
+	}
+}
