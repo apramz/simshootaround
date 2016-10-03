@@ -74,6 +74,7 @@ var json_data = $.getValues();
 		mod_html(player_data['shot_a_pct']+"%", 'userShotAPctHomeDisplay');
 		mod_html(player_data['shot_b_pct']+"%", 'userShotBPctHomeDisplay');
 		mod_html_img(player_data['image'], 'userImageHomeDisplay');
+		store_player_cookie(player_data, 'user');
 	}
 
 //Modify CPU HTML with JSON Data - Function (Calls mod_html for each part of the cpu info display)
@@ -84,6 +85,7 @@ var json_data = $.getValues();
 		mod_html(player_data['shot_a_pct']+"%", 'cpuShotAPctHomeDisplay');
 		mod_html(player_data['shot_b_pct']+"%", 'cpuShotBPctHomeDisplay');
 		mod_html_img(player_data['image'], 'cpuImageHomeDisplay');
+		store_player_cookie(player_data, 'cpu');
 	}
 
 //Post-Selection Modify User Display Function (Binded to the List Items for Users)
@@ -102,6 +104,29 @@ var json_data = $.getValues();
 		update_cpu_stats(player_data);
 	});
 
+//Storing Player Selections in Document.Cookie
+	var store_player_cookie = function(player_data, user_or_cpu){
+		document.cookie = user_or_cpu+"="+player_data['name'];
+		var player_names = document.cookie;
+		console.log(player_names);
+	}
+
+/********************************
+	HOME-TO-GAME TRANSITION
+*********************************/
+
+// Accessing Player Selections in Document.Cookie for User or CPU - Function
+	var access_player_cookie = function(user_or_cpu) {
+		var player;
+		if (user_or_cpu === 'user') {
+			player = document.cookie.split(';')[0].split('=')[1];
+			return player;
+		}
+		else if (user_or_cpu === 'cpu') {
+			player = document.cookie.split(';')[1].split('=')[1];
+			return player;
+		}
+	}
 };
 
 $(document).ready(main)
