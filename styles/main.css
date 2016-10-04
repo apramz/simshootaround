@@ -149,4 +149,20 @@ hr {
 *********************************
 *********************************/
 
+/********************************
+	game user/cpu display
+*********************************/
 
+.playerGameDisplay {
+	border: 1px solid #555;
+	background-color: white;
+}
+
+.playerInfoGameDisplay {
+	border: 1px solid #555;
+	padding: 0;
+}
+
+.user_or_cpu {
+	border: 1px solid #555;
+}

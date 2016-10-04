@@ -104,6 +104,10 @@ var json_data = $.getValues();
 		update_cpu_stats(player_data);
 	});
 
+/********************************
+		COOKIE FUNCTIONS
+*********************************/
+
 //Storing Player Selections in Document.Cookie
 	var store_player_cookie = function(player_data, user_or_cpu){
 		document.cookie = user_or_cpu+"="+player_data['name'];
@@ -111,22 +115,45 @@ var json_data = $.getValues();
 		console.log(player_names);
 	}
 
-/********************************
-	HOME-TO-GAME TRANSITION
-*********************************/
-
-// Accessing Player Selections in Document.Cookie for User or CPU - Function
+//Accessing Player Selections in Document.Cookie for User or CPU - Function
 	var access_player_cookie = function(user_or_cpu) {
 		var player;
+		var player1 = document.cookie.split(';')[0].split('=')[1]; //Splits the cookie into the two entries, this one is selecting the first
+		var player2 = document.cookie.split(';')[1].split('=')[1]; //Splits the cookie into the second entry
 		if (user_or_cpu === 'user') {
-			player = document.cookie.split(';')[0].split('=')[1];
-			return player;
+			if (player1.indexOf('user') >= 0) { //Checks if first entry contains the 'user' keyword
+				player = player1;
+				return player;
+			}
+			else {
+				player = player2;
+				return player;
+			}
 		}
 		else if (user_or_cpu === 'cpu') {
-			player = document.cookie.split(';')[1].split('=')[1];
-			return player;
+			if (player1.indexOf('cpu') >= 0) { //Checks if first entry contains the 'cpu' keyword
+				player = player1;
+				return player;
+			}
+			else {
+				player = player2;
+				return player;
+			}
 		}
 	}
+
+//Clearing Player Selections in Document.Cookie for User + CPU - Function 
+	var clear_player_cookie = function() {
+		document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+		document.cookie = "cpu=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	}
+
+/********************************
+*********************************
+			GAME
+*********************************
+*********************************/
+
 };
 
 $(document).ready(main)
