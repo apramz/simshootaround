@@ -163,6 +163,70 @@ hr {
 	padding: 0;
 }
 
+.imageGameDisplay {
+	width: 10%,
+}
+
+.imageGameDisplay img {
+	width: 50%;
+}
+
 .user_or_cpu {
 	border: 1px solid #555;
+}
+
+.playerGameDisplay td {
+	border: 1px solid #555;
+}
+
+/*@media only screen and (max-width: 765px) {
+		.playerInfoGameDisplay {
+			width: 0px !important;
+		}
+	}*/
+
+/********************************
+		scoreboard
+*********************************/
+
+.scoreboard {
+	border: 1px solid #555;
+	background-color: white;
+}
+
+.scoreboard td {
+	border: 1px solid #555;
+	padding: 0;
+}
+
+/********************************
+		box score
+*********************************/
+
+.gametools td {
+	border: 1px solid #555;
+	background-color: white;
+}
+
+
+.box_score td {
+	border: 1px solid #555;
+	background-color: white;
+}
+
+.box_score .headers td {
+	border-top: none;
+}
+
+#shotcontrols {
+	border-right: none;
+}
+
+.shotcontrol img {
+	height: 15%;
+	width: 15%;
+}
+
+#box_score_holder {
+	border: none;
 }

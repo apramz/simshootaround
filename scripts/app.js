@@ -118,25 +118,25 @@ var json_data = $.getValues();
 //Accessing Player Selections in Document.Cookie for User or CPU - Function
 	var access_player_cookie = function(user_or_cpu) {
 		var player;
-		var player1 = document.cookie.split(';')[0].split('=')[1]; //Splits the cookie into the two entries, this one is selecting the first
-		var player2 = document.cookie.split(';')[1].split('=')[1]; //Splits the cookie into the second entry
+		var player1 = document.cookie.split(';')[0]; //Splits the cookie into the two entries, this one is selecting the first
+		var player2 = document.cookie.split(';')[1]; //Splits the cookie into the second entry
 		if (user_or_cpu === 'user') {
 			if (player1.indexOf('user') >= 0) { //Checks if first entry contains the 'user' keyword
-				player = player1;
+				player = player1.split('=')[1]; //Splits the 'user' keyword from the player name
 				return player;
 			}
 			else {
-				player = player2;
+				player = player2.split('=')[1];
 				return player;
 			}
 		}
 		else if (user_or_cpu === 'cpu') {
 			if (player1.indexOf('cpu') >= 0) { //Checks if first entry contains the 'cpu' keyword
-				player = player1;
+				player = player1.split('=')[1]; //Splits the 'cpu' keyword from the player name
 				return player;
 			}
 			else {
-				player = player2;
+				player = player2.split('=')[1];
 				return player;
 			}
 		}
@@ -154,6 +154,37 @@ var json_data = $.getValues();
 *********************************
 *********************************/
 
+/********************************
+		PLAYER CARD UPDATES
+*********************************/
+
+//Modify User Player Card Data - Function
+	var update_user_card = function() {
+		var user_player = access_player_cookie('user');
+		var user_data = parse_json(user_player, json_data);
+		mod_html(user_data['name'], 'userNameGameDisplay');
+		mod_html_img(user_data['image'], 'userImageGameDisplay');
+	}
+
+// Modify CPU Player Card Data - Function
+	var update_cpu_card = function() {
+		var cpu_player = access_player_cookie('cpu');
+		var cpu_data = parse_json(cpu_player, json_data);
+		mod_html(cpu_data['name'], 'cpuNameGameDisplay');
+		mod_html_img(cpu_data['image'], 'cpuImageGameDisplay');
+	}
+
+//Initial Loading of Player Info - Function
+	window.onload = function() {
+		update_user_card();
+		update_cpu_card();
+	}
+
+/********************************
+		GAME SIMULATION
+*********************************/
+
+ 
 };
 
 $(document).ready(main)
