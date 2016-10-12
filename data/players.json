@@ -5,7 +5,9 @@
 		"context": "GSW - Point Guard #7",
 		"image": "images/players/canthony.png",
 		"shot_a_pct": 0.42,
-		"shot_b_pct": 0.34
+		"shot_b_pct": 0.34,
+		"shot_a_likelihood": 0.76,
+		"shot_b_likelihood": 0.24
 	},
 	"Chris Paul": {
 		"name": "Chris Paul",
@@ -13,7 +15,9 @@
 		"context": "LAC - Point Guard #3",
 		"image": "images/players/cpaul.png",
 		"shot_a_pct": 0.53,
-		"shot_b_pct": 0.37
+		"shot_b_pct": 0.37,
+		"shot_a_likelihood": 0.71,
+		"shot_b_likelihood": 0.29
 	},
 	"Dirk Nowitzki": {
 		"name": "Dirk Nowitzki",
@@ -21,7 +25,9 @@
 		"context": "DAL - Power Forward #41",
 		"image": "images/players/dnowitzki.png",
 		"shot_a_pct": 0.48,
-		"shot_b_pct": 0.37
+		"shot_b_pct": 0.37,
+		"shot_a_likelihood": 0.69,
+		"shot_b_likelihood": 0.31
 	},
 	"Dwyane Wade": {
 		"name": "Dwyane Wade",
@@ -29,7 +35,9 @@
 		"context": "DAL - Shooting Guard #3",
 		"image": "images/players/dwade.png",
 		"shot_a_pct": 0.34,
-		"shot_b_pct": 0.16
+		"shot_b_pct": 0.16,
+		"shot_a_likelihood": 0.90,
+		"shot_b_likelihood": 0.10
 	},
 	"James Harden": {
 		"name": "James Harden",
@@ -37,7 +45,9 @@
 		"context": "HOU - Point Guard #13",
 		"image": "images/players/jharden.png",
 		"shot_a_pct": 0.43,
-		"shot_b_pct": 0.36
+		"shot_b_pct": 0.36,
+		"shot_a_likelihood": 0.59,
+		"shot_b_likelihood": 0.41
 	},
 	"John Wall": {
 		"name": "John Wall",
@@ -45,7 +55,9 @@
 		"context": "WAS - Point Guard #2",
 		"image": "images/players/jwall.png",
 		"shot_a_pct": 0.37,
-		"shot_b_pct": 0.35
+		"shot_b_pct": 0.35,
+		"shot_a_likelihood": 0.76,
+		"shot_b_likelihood": 0.24
 	},
 	"Kobe Bryant": {
 		"name": "Kobe Bryant",
@@ -53,7 +65,9 @@
 		"context": "LAL - Shooting Guard #24",
 		"image": "images/players/kbryant.png",
 		"shot_a_pct": 0.48,
-		"shot_b_pct": 0.35
+		"shot_b_pct": 0.35,
+		"shot_a_likelihood": 0.76,
+		"shot_b_likelihood": 0.24
 	},
 	"Kevin Durant": {
 		"name": "Kevin Durant",
@@ -61,7 +75,9 @@
 		"context": "OKC - Small Forward #35",
 		"image": "images/players/kdurant.png",
 		"shot_a_pct": 0.54,
-		"shot_b_pct": 0.39
+		"shot_b_pct": 0.39,
+		"shot_a_likelihood": 0.65,
+		"shot_b_likelihood": 0.35
 	},
 	"Kyrie Irving": {
 		"name": "Kyrie Irving",
@@ -69,7 +85,9 @@
 		"context": "CLE - Point Guard #2",
 		"image": "images/players/kirving.png",
 		"shot_a_pct": 0.50,
-		"shot_b_pct": 0.32
+		"shot_b_pct": 0.32,
+		"shot_a_likelihood": 0.70,
+		"shot_b_likelihood": 0.30
 	},
 	"Kawhi Leonard": {
 		"name": "Kawhi Leonard",
@@ -77,6 +95,8 @@
 		"context": "SAS - Small Forward #2",
 		"image": "images/players/kleonard.png",
 		"shot_a_pct": 0.50,
-		"shot_b_pct": 0.44
+		"shot_b_pct": 0.44,
+		"shot_a_likelihood": 0.73,
+		"shot_b_likelihood": 0.27
 	}
 }
