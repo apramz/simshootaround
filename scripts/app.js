@@ -304,8 +304,8 @@ var cpu_winstreak = 0;
 		mod_html(user_pts, 'user_pts');
 		mod_html(user_makes, 'user_makes');
 		mod_html(user_shots, 'user_shots');
-		mod_html(user_makes/user_shots, 'user_shot_pct');
-		mod_html(user_3p_makes/user_3p_shots, 'user_3p_shot_pct');
+		mod_html(((user_makes/user_shots).toFixed(2)*100).toFixed(0)+'%', 'user_shot_pct');
+		mod_html(((user_3p_makes/user_3p_shots).toFixed(2)*100).toFixed(0)+'%', 'user_3p_shot_pct');
 	}
 
 //CPU Simulation Initiation - Function 
